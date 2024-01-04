@@ -140,4 +140,6 @@ dmypy.json
 
 # database files
 *.sqlite3
+*/.sqlite3
 *.db
+*/.db
