@@ -1,10 +1,7 @@
-# set global config variables
+from environs import Env
 
-# token for bot
-BOT_TOKEN = '5602232659:AAGLqdnoHt3qYpQKRUXwm6lQgsPfhQrxw4s'
+env = Env()
+env.read_env()
 
-# admins
-
-ADMINS = [1393139047]
-
-# Path: data\config.py
+BOT_TOKEN = env.str("BOT_TOKEN")  
+ADMINS = env.list("ADMINS", subcast=int)

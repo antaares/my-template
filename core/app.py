@@ -7,6 +7,7 @@ import middlewares, filters, handlers
 
 async def on_startup(dispatcher):
     db.create_table_users()
+    db.create_table_channels()
     
     
 
